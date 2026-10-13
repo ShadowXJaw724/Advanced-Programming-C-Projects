@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Adv.-Coding---Project-1" targetName="test" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5fa38bc1-0312-4700-ae29-7cfe2aa053bc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="6" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="Jg3vFkyV" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000000002" />
+      <entry key="S10" value="1.0000000186316005" />
+      <entry key="S30" value="1.0055145932332699" />
+      <entry key="S60" value="1.130023809938649" />
+      <entry key="M2" value="1.754077116646037" />
+      <entry key="M5" value="5.246007864281328" />
+      <entry key="M10" value="11.348023540065471" />
+      <entry key="M15" value="15.577342543805953" />
+      <entry key="M30" value="22.017382439069888" />
+      <entry key="H1" value="26.45390545388647" />
+      <entry key="H2" value="29.070955197836888" />
+      <entry key="H4" value="30.494065789849106" />
+      <entry key="D1" value="31.743041711031612" />
+      <entry key="W1" value="31.96314255844298" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.362455551514343E-118" />
+      <entry key="S5" value="1.0249029814261314E-47" />
+      <entry key="S10" value="3.22313490745975E-24" />
+      <entry key="S30" value="1.7531641347173142E-8" />
+      <entry key="S60" value="1.7432386103429022E-4" />
+      <entry key="M2" value="0.018552385683216415" />
+      <entry key="M5" value="0.34131643575214987" />
+      <entry key="M10" value="0.9718915136242963" />
+      <entry key="M15" value="1.400219314350652" />
+      <entry key="M30" value="2.037958733463906" />
+      <entry key="H1" value="2.4689532102470775" />
+      <entry key="H2" value="2.7205219190359626" />
+      <entry key="H4" value="2.856571642042176" />
+      <entry key="D1" value="2.975564833083871" />
+      <entry key="W1" value="2.996496029202382" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8122523963562355" />
+      <entry key="MS500" value="0.9592641193252643" />
+      <entry key="S2" value="0.989656656415207" />
+      <entry key="S5" value="0.9958497530944583" />
+      <entry key="S10" value="0.9979227376130115" />
+      <entry key="S30" value="1.0048199599831842" />
+      <entry key="S60" value="1.1298214729213838" />
+      <entry key="M2" value="1.7719049866318484" />
+      <entry key="M5" value="5.583035012839491" />
+      <entry key="M10" value="12.313394766468862" />
+      <entry key="M15" value="16.971115906832118" />
+      <entry key="M30" value="24.05050207055486" />
+      <entry key="H1" value="28.919879735454366" />
+      <entry key="H2" value="31.78982242716054" />
+      <entry key="H4" value="33.3497651412029" />
+      <entry key="D1" value="34.7184545864644" />
+      <entry key="W1" value="34.95961671384521" />
+    </decayedShown>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2026" />
+    <option name="minorVersion" value="2.3.1" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3KeTtX0C9CdcU1UKmHdEC0QXxYC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.main.cpp.executor": "Run",
+    "C/C++ File.main.h.executor": "Run",
+    "CMake Application.Source_Files.executor": "Run",
+    "CMake Application.main.cpp.executor": "Run",
+    "CMake Application.test.executor": "Run",
+    "CidrDebugProfileConversion": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "BranchTest__CLion",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/ripja/Documents/[Resources] GitHub Stuff/Adv.-Coding---Project-1/Source Files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application.test">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Adv.-Coding---Project-1" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Adv.-Coding---Project-1" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Source Files" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.h" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Source Files" TARGET_NAME="main.h" CONFIG_NAME="main.h">
+      <option name="sourceFile" value="main.h" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="C/C++ File.main.h" />
+      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="CMake Application.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.main.cpp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "CMake Application.test",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.main.h"
+      },
+      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "C/C++ File.main.cpp"
+      },
+      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+    }
+  ],
+  "modificationCount": 9
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5fa38bc1-0312-4700-ae29-7cfe2aa053bc" name="Changes" comment="" />
+      <created>1791917248536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791917248536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+    <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/twosidelist.cpp</url>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

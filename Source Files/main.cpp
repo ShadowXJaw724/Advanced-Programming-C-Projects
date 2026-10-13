@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include "twosidelist.cpp"
+#include "twosidelist.h"
 using namespace std;
 
 int main(int argc, char** argv) {
@@ -18,7 +20,7 @@ int main(int argc, char** argv) {
 		}
     plik.close();
     
-    
+    TSL();
     return 0;
 }
 
