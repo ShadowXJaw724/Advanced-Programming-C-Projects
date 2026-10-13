@@ -1,24 +1,12 @@
+#pragma once
+#include "string"
 #include <iostream>
 #include <fstream>
 using namespace std;
 
-int main(int argc, char** argv) {
+#ifndef TWOSIDELIST
+#define TWOSIDELIST
 
- 	ofstream plik("strona.html");
- 	if(!plik)
- 		cout<<"blad zapisu pliku";
- 	else
- 		{
- 		plik<<"<html>";
- 		plik<<"<head><title>Moja pierwsza strona www</title></head>";
- 		plik<<"<body>Strona WWW</body>";
- 		plik<<"</html>";
-		
-		cout<<"Wygenerowana strona"; 	
-		}
-    plik.close();
-    
-    
-    return 0;
-}
+inline int TSL(int argc, char** argv) { return 0; };
 
+#endif

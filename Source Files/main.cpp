@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
+#include "twosidelist.h"
 using namespace std;
 
 int main(int argc, char** argv) {
-
  	ofstream plik("strona.html");
  	if(!plik)
  		cout<<"blad zapisu pliku";
@@ -17,7 +17,6 @@ int main(int argc, char** argv) {
 		cout<<"Wygenerowana strona"; 	
 		}
     plik.close();
-    
     
     return 0;
 }
