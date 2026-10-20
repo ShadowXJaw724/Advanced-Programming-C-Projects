@@ -3,9 +3,13 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeProjectFlavorService">
     <option name="flavorId" value="CMakePlainProjectFlavor" />
   </component>
@@ -23,7 +27,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fa38bc1-0312-4700-ae29-7cfe2aa053bc" name="Changes" comment="" />
+    <list default="true" id="5fa38bc1-0312-4700-ae29-7cfe2aa053bc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twosidelist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/twosidelist.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +42,15 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="6" />
+    <option name="cachedIndexableFilesCount" value="16" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/twosidelist.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="Jg3vFkyV" />
@@ -51,59 +63,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000000000002" />
-      <entry key="S10" value="1.0000000186316005" />
-      <entry key="S30" value="1.0055145932332699" />
-      <entry key="S60" value="1.130023809938649" />
-      <entry key="M2" value="1.754077116646037" />
-      <entry key="M5" value="5.246007864281328" />
-      <entry key="M10" value="11.348023540065471" />
-      <entry key="M15" value="15.577342543805953" />
-      <entry key="M30" value="22.017382439069888" />
-      <entry key="H1" value="26.45390545388647" />
-      <entry key="H2" value="29.070955197836888" />
-      <entry key="H4" value="30.494065789849106" />
-      <entry key="D1" value="31.743041711031612" />
-      <entry key="W1" value="31.96314255844298" />
+      <entry key="S2" value="1.0000000000185687" />
+      <entry key="S5" value="1.0002475120658327" />
+      <entry key="S10" value="1.0817107642624777" />
+      <entry key="S30" value="8.119910233377857" />
+      <entry key="S60" value="26.96648751660289" />
+      <entry key="M2" value="55.593856734506055" />
+      <entry key="M5" value="101.79882670136683" />
+      <entry key="M10" value="153.88303949655682" />
+      <entry key="M15" value="198.43233260314966" />
+      <entry key="M30" value="285.94152407426964" />
+      <entry key="H1" value="361.0098544926283" />
+      <entry key="H2" value="415.0605070781905" />
+      <entry key="H4" value="478.4010250147626" />
+      <entry key="D1" value="714.971135770415" />
+      <entry key="W1" value="813.452420308178" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.362455551514343E-118" />
-      <entry key="S5" value="1.0249029814261314E-47" />
-      <entry key="S10" value="3.22313490745975E-24" />
-      <entry key="S30" value="1.7531641347173142E-8" />
-      <entry key="S60" value="1.7432386103429022E-4" />
-      <entry key="M2" value="0.018552385683216415" />
-      <entry key="M5" value="0.34131643575214987" />
-      <entry key="M10" value="0.9718915136242963" />
-      <entry key="M15" value="1.400219314350652" />
-      <entry key="M30" value="2.037958733463906" />
-      <entry key="H1" value="2.4689532102470775" />
-      <entry key="H2" value="2.7205219190359626" />
-      <entry key="H4" value="2.856571642042176" />
-      <entry key="D1" value="2.975564833083871" />
-      <entry key="W1" value="2.996496029202382" />
+      <entry key="S2" value="6.790501853740082E-262" />
+      <entry key="S5" value="3.532824747232432E-105" />
+      <entry key="S10" value="6.948835114586823E-53" />
+      <entry key="S30" value="6.1107224098898455E-18" />
+      <entry key="S60" value="3.490017342855209E-9" />
+      <entry key="M2" value="8.821219783471766E-5" />
+      <entry key="M5" value="0.043012903292478595" />
+      <entry key="M10" value="0.35346023826470857" />
+      <entry key="M15" value="0.7181800622723814" />
+      <entry key="M30" value="1.4648525227960252" />
+      <entry key="H1" value="2.095534786032523" />
+      <entry key="H2" value="2.5372229373570283" />
+      <entry key="H4" value="3.0443477183139054" />
+      <entry key="D1" value="5.0016370009464906" />
+      <entry key="W1" value="5.8340113600635055" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8122523963562355" />
-      <entry key="MS500" value="0.9592641193252643" />
-      <entry key="S2" value="0.989656656415207" />
-      <entry key="S5" value="0.9958497530944583" />
-      <entry key="S10" value="0.9979227376130115" />
-      <entry key="S30" value="1.0048199599831842" />
-      <entry key="S60" value="1.1298214729213838" />
-      <entry key="M2" value="1.7719049866318484" />
-      <entry key="M5" value="5.583035012839491" />
-      <entry key="M10" value="12.313394766468862" />
-      <entry key="M15" value="16.971115906832118" />
-      <entry key="M30" value="24.05050207055486" />
-      <entry key="H1" value="28.919879735454366" />
-      <entry key="H2" value="31.78982242716054" />
-      <entry key="H4" value="33.3497651412029" />
-      <entry key="D1" value="34.7184545864644" />
-      <entry key="W1" value="34.95961671384521" />
+      <entry key="MS100" value="0.39502065593168856" />
+      <entry key="MS500" value="0.8304700240908941" />
+      <entry key="S2" value="0.954621014158191" />
+      <entry key="S5" value="0.9818421001863518" />
+      <entry key="S10" value="1.072366823612503" />
+      <entry key="S30" value="8.113217394103444" />
+      <entry key="S60" value="26.956768140600587" />
+      <entry key="M2" value="55.58107900494105" />
+      <entry key="M5" value="101.82537691968305" />
+      <entry key="M10" value="154.211443222768" />
+      <entry key="M15" value="199.1207120942771" />
+      <entry key="M30" value="287.3771279358209" />
+      <entry key="H1" value="363.08428238832096" />
+      <entry key="H2" value="417.58487609344127" />
+      <entry key="H4" value="481.4378878535715" />
+      <entry key="D1" value="719.9710017427328" />
+      <entry key="W1" value="819.2861489423499" />
     </decayedShown>
   </component>
   <component name="ProjectApplicationVersion">
@@ -112,54 +124,49 @@
     <option name="minorVersion" value="2.3.1" />
     <option name="productBranch" value="Classic" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3KeTtX0C9CdcU1UKmHdEC0QXxYC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ File.main.cpp.executor": "Run",
-    "C/C++ File.main.h.executor": "Run",
-    "CMake Application.Source_Files.executor": "Run",
-    "CMake Application.main.cpp.executor": "Run",
-    "CMake Application.test.executor": "Run",
-    "CidrDebugProfileConversion": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "BranchTest__CLion",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/ripja/Documents/[Resources] GitHub Stuff/Adv.-Coding---Project-1/Source Files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "editor.preferences.completion.inline",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.main.h.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.Source_Files.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ripja/Documents/[Resources] GitHub Stuff/Adv.-Coding---Project-1/Source Files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="CMake Application.test">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Adv.-Coding---Project-1" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Adv.-Coding---Project-1" RUN_TARGET_NAME="test">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -188,30 +195,30 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SelectedDebugProfileService"><![CDATA[{
-  "profileIdByStamp": [
+  <component name="SelectedDebugProfileService">{
+  &quot;profileIdByStamp&quot;: [
     {
-      "first": {
-        "##RUN_CONFIGURATION##": "CMake Application.test",
-        "cmake": "CMakeBuildProfile:Debug"
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;CMake Application.test&quot;,
+        &quot;cmake&quot;: &quot;CMakeBuildProfile:Debug&quot;
       },
-      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+      &quot;second&quot;: &quot;1114f3c0-63c4-4950-8d08-89833f77da16&quot;
     },
     {
-      "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.main.h"
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.main.h&quot;
       },
-      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+      &quot;second&quot;: &quot;1114f3c0-63c4-4950-8d08-89833f77da16&quot;
     },
     {
-      "first": {
-        "##RUN_CONFIGURATION##": "C/C++ File.main.cpp"
+      &quot;first&quot;: {
+        &quot;##RUN_CONFIGURATION##&quot;: &quot;C/C++ File.main.cpp&quot;
       },
-      "second": "1114f3c0-63c4-4950-8d08-89833f77da16"
+      &quot;second&quot;: &quot;1114f3c0-63c4-4950-8d08-89833f77da16&quot;
     }
   ],
-  "modificationCount": 9
-}]]></component>
+  &quot;modificationCount&quot;: 9
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5fa38bc1-0312-4700-ae29-7cfe2aa053bc" name="Changes" comment="" />
@@ -230,16 +237,6 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
     <isAutomaticBootstrapAfterUpdate value="false" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/twosidelist.cpp</url>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

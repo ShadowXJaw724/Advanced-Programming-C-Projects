@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 		cout<<"Wygenerowana strona"; 	
 		}
     plik.close();
-    
+
     TSL();
     return 0;
 }
