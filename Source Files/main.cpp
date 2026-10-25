@@ -1,26 +1,27 @@
 #include <iostream>
-#include <fstream>
-#include "twosidelist.cpp"
-#include "twosidelist.h"
+#include "factory_system.h"
+#include "iterator_system.h"
 using namespace std;
 
-int main(int argc, char** argv) {
+int main() {
+    DoubleLinkedList list = factory_system::createSampleList();
 
- 	ofstream plik("strona.html");
- 	if(!plik)
- 		cout<<"blad zapisu pliku";
- 	else
- 		{
- 		plik<<"<html>";
- 		plik<<"<head><title>Moja pierwsza strona www</title></head>";
- 		plik<<"<body>Strona WWW</body>";
- 		plik<<"</html>";
-		
-		cout<<"Wygenerowana strona"; 	
-		}
-    plik.close();
+    cout << "forward (iterator): ";
+    iterator_system::iterateforward(list);
 
-    TSL();
+    cout << "backward (iterator): ";
+    iterator_system::iteratebackward(list);
+
+    list.DLL_RemoveIDX(2);
+    cout << "index 1: " << list.DLL_GetIDX(1) << endl;
+    cout << "from end 1: " << list.DLL_GetEnd(1) << endl;
+    list.DLL_Next();
+    list.DLL_Prev();
+
+    const int extra[] = {7, 8, 9};
+    DoubleLinkedList fromArray = factory_system::createFromArray(extra, 3);
+    cout << "from array: ";
+    iterator_system::iterateforward(fromArray);
+
     return 0;
 }
-

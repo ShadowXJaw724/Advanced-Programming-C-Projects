@@ -5,4 +5,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(test
         main.cpp
+        iterator_system.cpp
+        iterator_system.h
+        factory_system.cpp
+        factory_system.h
+        twosidelist.cpp
 )
