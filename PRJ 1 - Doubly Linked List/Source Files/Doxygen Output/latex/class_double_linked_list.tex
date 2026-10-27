@@ -1,0 +1,193 @@
+\doxysection{Double\+Linked\+List Class Reference}
+\hypertarget{class_double_linked_list}{}\label{class_double_linked_list}\index{DoubleLinkedList@{DoubleLinkedList}}
+
+
+{\ttfamily \+\#include $<$twosidelist.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_double_linked_list_a7e2c72978120a51da2251e378ef1892c}{Double\+Linked\+List}} ()
+\item 
+\doxymbox{\hyperlink{class_double_linked_list_aa1f0f97be640f3ecda7c2c39a5725c13}{Double\+Linked\+List}} (const \doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&)=delete
+\item 
+\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \& \doxymbox{\hyperlink{class_double_linked_list_ac08a295b16312ef41dbebc6ccb0528c1}{operator=}} (const \doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&)=delete
+\item 
+\doxymbox{\hyperlink{class_double_linked_list_a50f7ac9d8df648441a45ee9d61e30df8}{Double\+Linked\+List}} (\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&\&other) noexcept
+\item 
+\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \& \doxymbox{\hyperlink{class_double_linked_list_ae33a21887e4fa8867a352206fa2079b8}{operator=}} (\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&\&other) noexcept
+\item 
+\doxymbox{\hyperlink{class_double_linked_list_ab808039dac47f1f62d00fcf0951550c5}{\texorpdfstring{$\sim$}{\string~}\+Double\+Linked\+List}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_a96b481b7e2c953401b906a116cb0b4a3}{DLL\+\_\+\+Insert\+Front}} (int o)
+\item 
+int \doxymbox{\hyperlink{class_double_linked_list_a4ecdca2099c372cde942a18e25310ce4}{DLL\+\_\+\+Remove\+Front}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_a6499787674381a758c06c9c9b114c6d5}{DLL\+\_\+\+Insert\+Back}} (int o)
+\item 
+int \doxymbox{\hyperlink{class_double_linked_list_a42a026e6d5c988739fd2a91f05cfcdde}{DLL\+\_\+\+Remove\+Back}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_a1effb406a84f0ae3f56309d922791ac3}{DLL\+\_\+\+Insert\+IDX}} (int o, int inx)
+\item 
+int \doxymbox{\hyperlink{class_double_linked_list_a5b1a322aad3eafcb190261e0057863c6}{DLL\+\_\+\+Remove\+IDX}} (int inx)
+\item 
+int \doxymbox{\hyperlink{class_double_linked_list_a4338a99c63cbbe15747e6a982a05c62f}{DLL\+\_\+\+Get\+IDX}} (int inx)
+\item 
+int \doxymbox{\hyperlink{class_double_linked_list_ac289f92aa63845d4619b4e7fe97cf3f1}{DLL\+\_\+\+Get\+End}} (int inx)
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_aee8e70368af45e2fc4fdad361bd8070c}{DLL\+\_\+\+Clear}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_aaf7ff58326dadede726d1266543237ab}{DLL\+\_\+\+Forward\+Display}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_ae835a7d4822192ae3cc66480a6441271}{DLL\+\_\+\+Backward\+Display}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_a11ab579bd56cd898d5a357d9cf803f39}{DLL\+\_\+\+Next}} ()
+\item 
+void \doxymbox{\hyperlink{class_double_linked_list_a6e2f67fac662446b05abffc694244347}{DLL\+\_\+\+Prev}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_double_linked_list_abf7155d56c2ec7b7ca84cd1c19162143}{iterator\+\_\+system}}
+\end{DoxyCompactItemize}
+
+
+\label{class_double_linked_list_doc-constructors}
+\Hypertarget{class_double_linked_list_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_double_linked_list_a7e2c72978120a51da2251e378ef1892c}\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DoubleLinkedList()}{DoubleLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a7e2c72978120a51da2251e378ef1892c} 
+Double\+Linked\+List::\+\+Double\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_double_linked_list_aa1f0f97be640f3ecda7c2c39a5725c13}\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DoubleLinkedList()}{DoubleLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_double_linked_list_aa1f0f97be640f3ecda7c2c39a5725c13} 
+Double\+Linked\+List::\+\+Double\+Linked\+List (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_double_linked_list_a50f7ac9d8df648441a45ee9d61e30df8}\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\index{DoubleLinkedList@{DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DoubleLinkedList()}{DoubleLinkedList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a50f7ac9d8df648441a45ee9d61e30df8} 
+Double\+Linked\+List::\+\+Double\+Linked\+List (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_double_linked_list_ab808039dac47f1f62d00fcf0951550c5}\index{DoubleLinkedList@{DoubleLinkedList}!````~DoubleLinkedList@{\texorpdfstring{$\sim$}{\string~}DoubleLinkedList}}
+\index{````~DoubleLinkedList@{\texorpdfstring{$\sim$}{\string~}DoubleLinkedList}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}DoubleLinkedList()}{\string~DoubleLinkedList()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_ab808039dac47f1f62d00fcf0951550c5} 
+Double\+Linked\+List::\+\texorpdfstring{$\sim$}{\string~}\+Double\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{class_double_linked_list_doc-func-members}
+\Hypertarget{class_double_linked_list_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_double_linked_list_ae835a7d4822192ae3cc66480a6441271}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_BackwardDisplay@{DLL\_BackwardDisplay}}
+\index{DLL\_BackwardDisplay@{DLL\_BackwardDisplay}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_BackwardDisplay()}{DLL\_BackwardDisplay()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_ae835a7d4822192ae3cc66480a6441271} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Backward\+Display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_aee8e70368af45e2fc4fdad361bd8070c}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_Clear@{DLL\_Clear}}
+\index{DLL\_Clear@{DLL\_Clear}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_Clear()}{DLL\_Clear()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_aee8e70368af45e2fc4fdad361bd8070c} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_aaf7ff58326dadede726d1266543237ab}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_ForwardDisplay@{DLL\_ForwardDisplay}}
+\index{DLL\_ForwardDisplay@{DLL\_ForwardDisplay}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_ForwardDisplay()}{DLL\_ForwardDisplay()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_aaf7ff58326dadede726d1266543237ab} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Forward\+Display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_ac289f92aa63845d4619b4e7fe97cf3f1}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_GetEnd@{DLL\_GetEnd}}
+\index{DLL\_GetEnd@{DLL\_GetEnd}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_GetEnd()}{DLL\_GetEnd()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_ac289f92aa63845d4619b4e7fe97cf3f1} 
+int Double\+Linked\+List::\+\+DLL\+\_\+\+Get\+End (\begin{DoxyParamCaption}\item[{int}]{inx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a4338a99c63cbbe15747e6a982a05c62f}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_GetIDX@{DLL\_GetIDX}}
+\index{DLL\_GetIDX@{DLL\_GetIDX}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_GetIDX()}{DLL\_GetIDX()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a4338a99c63cbbe15747e6a982a05c62f} 
+int Double\+Linked\+List::\+\+DLL\+\_\+\+Get\+IDX (\begin{DoxyParamCaption}\item[{int}]{inx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a6499787674381a758c06c9c9b114c6d5}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_InsertBack@{DLL\_InsertBack}}
+\index{DLL\_InsertBack@{DLL\_InsertBack}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_InsertBack()}{DLL\_InsertBack()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a6499787674381a758c06c9c9b114c6d5} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Insert\+Back (\begin{DoxyParamCaption}\item[{int}]{o}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a96b481b7e2c953401b906a116cb0b4a3}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_InsertFront@{DLL\_InsertFront}}
+\index{DLL\_InsertFront@{DLL\_InsertFront}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_InsertFront()}{DLL\_InsertFront()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a96b481b7e2c953401b906a116cb0b4a3} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Insert\+Front (\begin{DoxyParamCaption}\item[{int}]{o}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a1effb406a84f0ae3f56309d922791ac3}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_InsertIDX@{DLL\_InsertIDX}}
+\index{DLL\_InsertIDX@{DLL\_InsertIDX}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_InsertIDX()}{DLL\_InsertIDX()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a1effb406a84f0ae3f56309d922791ac3} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Insert\+IDX (\begin{DoxyParamCaption}\item[{int}]{o}{, }\item[{int}]{inx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a11ab579bd56cd898d5a357d9cf803f39}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_Next@{DLL\_Next}}
+\index{DLL\_Next@{DLL\_Next}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_Next()}{DLL\_Next()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a11ab579bd56cd898d5a357d9cf803f39} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a6e2f67fac662446b05abffc694244347}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_Prev@{DLL\_Prev}}
+\index{DLL\_Prev@{DLL\_Prev}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_Prev()}{DLL\_Prev()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a6e2f67fac662446b05abffc694244347} 
+void Double\+Linked\+List::\+\+DLL\+\_\+\+Prev (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a42a026e6d5c988739fd2a91f05cfcdde}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_RemoveBack@{DLL\_RemoveBack}}
+\index{DLL\_RemoveBack@{DLL\_RemoveBack}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_RemoveBack()}{DLL\_RemoveBack()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a42a026e6d5c988739fd2a91f05cfcdde} 
+int Double\+Linked\+List::\+\+DLL\+\_\+\+Remove\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a4ecdca2099c372cde942a18e25310ce4}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_RemoveFront@{DLL\_RemoveFront}}
+\index{DLL\_RemoveFront@{DLL\_RemoveFront}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_RemoveFront()}{DLL\_RemoveFront()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a4ecdca2099c372cde942a18e25310ce4} 
+int Double\+Linked\+List::\+\+DLL\+\_\+\+Remove\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_a5b1a322aad3eafcb190261e0057863c6}\index{DoubleLinkedList@{DoubleLinkedList}!DLL\_RemoveIDX@{DLL\_RemoveIDX}}
+\index{DLL\_RemoveIDX@{DLL\_RemoveIDX}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{DLL\_RemoveIDX()}{DLL\_RemoveIDX()}}
+{\footnotesize\ttfamily \label{class_double_linked_list_a5b1a322aad3eafcb190261e0057863c6} 
+int Double\+Linked\+List::\+\+DLL\+\_\+\+Remove\+IDX (\begin{DoxyParamCaption}\item[{int}]{inx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_double_linked_list_ac08a295b16312ef41dbebc6ccb0528c1}\index{DoubleLinkedList@{DoubleLinkedList}!operator=@{operator=}}
+\index{operator=@{operator=}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_double_linked_list_ac08a295b16312ef41dbebc6ccb0528c1} 
+\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \& Double\+Linked\+List::\+operator= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\Hypertarget{class_double_linked_list_ae33a21887e4fa8867a352206fa2079b8}\index{DoubleLinkedList@{DoubleLinkedList}!operator=@{operator=}}
+\index{operator=@{operator=}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_double_linked_list_ae33a21887e4fa8867a352206fa2079b8} 
+\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \& Double\+Linked\+List::\+operator= (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_double_linked_list}{Double\+Linked\+List}} \&\&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\label{class_double_linked_list_doc-related-members}
+\Hypertarget{class_double_linked_list_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_double_linked_list_abf7155d56c2ec7b7ca84cd1c19162143}\index{DoubleLinkedList@{DoubleLinkedList}!iterator\_system@{iterator\_system}}
+\index{iterator\_system@{iterator\_system}!DoubleLinkedList@{DoubleLinkedList}}
+\doxysubsubsection{\texorpdfstring{iterator\_system}{iterator\_system}}
+{\footnotesize\ttfamily \label{class_double_linked_list_abf7155d56c2ec7b7ca84cd1c19162143} 
+friend class \doxymbox{\hyperlink{classiterator__system}{iterator\+\_\+system}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{twosidelist_8h}{twosidelist.\+h}}\item 
+\doxymbox{\hyperlink{twosidelist_8cpp}{twosidelist.\+cpp}}\end{DoxyCompactItemize}
