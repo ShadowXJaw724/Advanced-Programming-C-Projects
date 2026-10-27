@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-class SX {
+class SX { /*!< Detailed description after the member */
 public:
 	int data;
 	SX* prev;
@@ -21,11 +21,7 @@ public:
 	DoubleLinkedList(const DoubleLinkedList&) = delete;
 	DoubleLinkedList& operator=(const DoubleLinkedList&) = delete;
 	DoubleLinkedList(DoubleLinkedList&& other) noexcept
-		: head(other.head), tail(other.tail), size(other.size) {
-		other.head = nullptr;
-		other.tail = nullptr;
-		other.size = 0;
-	}
+		: head(other.head), tail(other.tail), size(other.size) {}
 	DoubleLinkedList& operator=(DoubleLinkedList&& other) noexcept {
 		if (this != &other) {
 			DLL_Clear();
