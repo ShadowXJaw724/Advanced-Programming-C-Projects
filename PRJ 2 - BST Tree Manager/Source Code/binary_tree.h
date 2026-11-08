@@ -33,8 +33,8 @@ public:
     Node *FindNode(Node *root, int key);
     static Node* minValueNode(Node* node);
     static void PreorderTraversalNode(Node *root, int depth);
-    static void InorderTraverseNode(Node *root, int depth);
-    static void PostorderTraverseNode(Node *root, int depth);
+    static void InorderTraversalNode(Node *root, int depth);
+    static void PostorderTraversalNode(Node *root, int depth);
     static void EraseNode(Node* root);
 };
 
