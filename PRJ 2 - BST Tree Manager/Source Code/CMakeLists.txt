@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Source_Code main.cpp
         binary_tree.cpp
-        binary_tree.h)
+        binary_tree.h
+        file_manager.cpp
+        file_manager.h)

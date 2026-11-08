@@ -34,14 +34,12 @@ Node* BST_System::DeleteNode(Node* root,int d) {
             Node* temp = root->R;
             delete root;
             return temp;
-
         }
         if (root->R == nullptr) {
             Node* temp = root->L;
             delete root;
             return temp;
         }
-
         // node with two children : Get the inorder successor
         // (smallest in the right subtree)
         Node* temp = minValueNode(root->R);
@@ -55,33 +53,32 @@ Node* BST_System::DeleteNode(Node* root,int d) {
     return root;
 }
 
-
 void BST_System::PreorderTraversalNode(Node* root, int depth) {
     if (root != nullptr) {
-        for (int i = 0; i < depth; i++) std::cout << "    ";
-        std::cout << "-> " << root->data << "\n";
+        for (int i = 0; i < depth; i++) std::cout << (i == depth - 1 ? "|-- " : "    ");
+        std::cout << root->data << "\n";
         PreorderTraversalNode(root->L, depth + 1);
         PreorderTraversalNode(root->R, depth + 1);
     }
-};
+}
 
-void BST_System::InorderTraverseNode(Node* root, int depth) {
+void BST_System::InorderTraversalNode(Node* root, int depth) {
     if (root != nullptr) {
-        InorderTraverseNode(root->R, depth + 1);
+        InorderTraversalNode(root->R, depth + 1);
+        for (int i = 0; i < depth; i++) std::cout << "    ";
+        std::cout << "--- " << root->data << "\n";
+        InorderTraversalNode(root->L, depth + 1);
+    }
+}
+
+void BST_System::PostorderTraversalNode(Node* root, int depth) {
+    if (root != nullptr) {
+        PostorderTraversalNode(root->L, depth + 1);
+        PostorderTraversalNode(root->R, depth + 1);
         for (int i = 0; i < depth; i++) std::cout << "    ";
         std::cout << "-> " << root->data << "\n";
-        InorderTraverseNode(root->L, depth + 1);
     }
-};
-
-void BST_System::PostorderTraverseNode(Node* root, int depth) {
-    if (root != nullptr) {
-        for (int i = 0; i < depth; i++) std::cout << "    ";
-        PostorderTraverseNode(root->L, depth + 1);
-        PostorderTraverseNode(root->R, depth + 1);
-        std::cout << "-> " << root->data << "\n";
-    }
-};
+}
 
 bool BST_System::FindPathRec(Node* node, int key, std::vector<int>& path) {
     if (node == nullptr) return false;
@@ -98,14 +95,14 @@ Node *BST_System::FindNode(Node *root, int key) {
     std::vector<int> path;
 
     if (FindPathRec(root, key, path)) {
-        std::cout << "Path to tree value of " << key << ": ";
+        std::cout << "Droga do waluty " << key << ": ";
         for (size_t i = 0; i < path.size(); i++) {
             std::cout << path[i];
             if (i != path.size() - 1) std::cout << " -> ";
         }
         std::cout << "\n";
     } else {
-        std::cout << "Value " << key << " not found in tree.\n";
+        std::cout << "Waluta " << key << " nie byla znaleziona.\n";
     }
 }
 
