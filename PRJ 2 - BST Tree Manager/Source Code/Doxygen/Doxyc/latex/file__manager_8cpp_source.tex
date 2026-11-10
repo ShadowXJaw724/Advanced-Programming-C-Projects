@@ -1,0 +1,37 @@
+\doxysection{C:/\+\+Users/\+ripja/\+\+Documents/[Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 2 -\/ BST Tree Manager/\+\+Source Code/\+file\+\_\+manager.cpp}
+\label{file__manager_8cpp_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}file\_manager.h"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keywordtype}{void}\ FileManager\_System::SaveBinaryHelper(Node*\ root,\ std::ofstream\&\ file)\ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ file.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(\&(root-\/>data)),\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ SaveBinaryHelper(root-\/>L,\ file);}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ SaveBinaryHelper(root-\/>R,\ file);}
+\DoxyCodeLine{00008\ \ \ \ \ \}}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{void}\ FileManager\_System::SaveToBinary(Node*\ root,\ \textcolor{keyword}{const}\ std::string\&\ filename)\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ std::ofstream\ file(filename,\ std::ios::binary);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordflow}{if}\ (file.is\_open())\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ SaveBinaryHelper(root,\ file);}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ file.close();}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Tree\ saved\ to\ binary\ file:\ "{}}\ <<\ filename\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00017\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error\ opening\ binary\ file\ for\ writing.\(\backslash\)n"{}};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ Node*\ FileManager\_System::LoadFromBinary(Node*\ root,\ \textcolor{keyword}{const}\ std::string\&\ filename,\ BST\_System\&\ bst)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ std::ifstream\ file(filename,\ std::ios::binary);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Error\ opening\ binary\ file\ for\ reading.\(\backslash\)n"{}};\ \textcolor{keywordflow}{return}\ root;}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ val;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{while}\ (file.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(\&val),\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int})))\ root\ =\ bst.InsertNode(root,\ val);}
+\DoxyCodeLine{00029\ \ \ \ \ file.close();}
+\DoxyCodeLine{00030\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Data\ loaded\ from\ binary\ file.\(\backslash\)n"{}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{return}\ root;}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}

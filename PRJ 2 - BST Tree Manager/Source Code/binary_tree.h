@@ -28,7 +28,7 @@ public:
     BST_System(int o) : data(o), L(nullptr), R(nullptr) {}
     Node* CreateNode(int d) const;
     Node* InsertNode(Node *root, int d);
-    Node* DeleteNode(Node *root, int d);
+    Node* DeleteNode(Node *root, int d, bool found);
 
     Node *FindNode(Node *root, int key);
     static Node* minValueNode(Node* node);

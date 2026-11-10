@@ -2,6 +2,21 @@
 #include "binary_tree.h"
 #include "file_manager.h"
 
+/**
+ * @author Kacper Twaróg
+ * @date 2026-11-12
+ */
+
+/**
+ * @file binary_tree.h
+ * @brief Plik nagłówkowy algorytmu drzewa wyszukiwania binarnego, który został zaimplementowany w C++.
+ */
+
+/**
+ * @file file_manager.h
+ * @brief Plik nagłówkowy klasy menedżera plików umożliwiający prosty zapis/odczyt plików binarnych.
+ */
+
 int main() {
     int a; std::cout << "Wybierz liczbe jako srodek drzewa binarnego: ";
     std::cin >> a;
@@ -9,17 +24,31 @@ int main() {
     FileManager_System FM;
     Node* root = BST.CreateNode(a);
     string filen;
+    bool found = false;
     int choice = -1;
+
+    /**
+     * @brief Definiowanie różnych zmiennych do obsługi systemu.
+     * @param a Tymczasowa zmienna rozpoczynająca drzewo binarne, ponieważ regularnie zaczynała się od 0, przerwała
+     * sekwencjonowanie, ponieważ korzeń stał się 0, dlatego wszystkie liczby byłyby po jednej stronie.
+     * @param BST Instancja klasy Binary Search Tree.
+     * @param FM Instancja klasy Menedżer plików odpowiedzialna za konwersję i odszyfrowanie z czystego pliku binarnego.
+     * @param root Korzeń naszego drzewa binarnego i na czym opiera się cały ten program.
+     * @param filen Reprezentuje nazwę pliku, na której będziemy polegać podczas pracy z operacjami wejścia i wyjścia systemu.
+     * @param found Wartość logiczna sprawdzająca, czy funkcja DeleteNode znajduje węzeł do usunięcia.
+     * @param choice Prosty int pozwala nam używać przypadków przełączników do przechodzenia przez nieskończoną liczbę wyborów
+     * symulujących menu w celu przetestowania modułu drzewa wyszukiwania binarnego.
+     */
 
     while (choice != 0) {
         std::cout << "\n--- MENU ---\n";
         std::cout << "67. Dodaj przykladowe drzewo\n";
         std::cout << "1. Dodaj Element\n";
-        std::cout << "2. Usuń Element\n";
-        std::cout << "3. Usuń Całe Drzewo\n";
-        std::cout << "4. Pokaż Drzewo (Pre-Order)\n";
-        std::cout << "5. Pokaż Drzewo (In-Order)\n";
-        std::cout << "6. Pokaż Drzewo (Post-Order)\n";
+        std::cout << "2. Usun Element\n";
+        std::cout << "3. Usun Cale Drzewo\n";
+        std::cout << "4. Pokaz Drzewo (Pre-Order)\n";
+        std::cout << "5. Pokaz Drzewo (In-Order)\n";
+        std::cout << "6. Pokaz Drzewo (Post-Order)\n";
         std::cout << "7. Znajdz droge do Elementu\n";
         std::cout << "8. Zapisz do pliku\n";
         std::cout << "9. Wczytaj z pliku (overwrite)\n";
@@ -44,7 +73,8 @@ int main() {
             }
             case 2: {
                 int v; std::cout << "Usuń walute z drzewa: ";
-                std::cin >> v; root = BST.DeleteNode(root, v);
+                std::cin >> v; root = BST.DeleteNode(root, v, found);
+                if (!found) std::cout << "Waluty nie było w drzewie!: ";
                 break;
             }
             case 3:
@@ -80,5 +110,12 @@ int main() {
                 break;
         }
     }
+
+    /**
+     * @brief System do testowania drzewa wyszukiwania binarnego i jego działania.
+    * @details System switch case umożliwiający testowanie dodawania węzłów, usuwania węzłów, usuwania całego drzewa,
+     * metod znajdowania węzła, kolejności wstępnej i końcowej, zapisywania i ładowania do pliku oraz szybkiego podawania
+     * wstępnie ustawionej listy do przetestowania.
+     */
     return 0;
 }
