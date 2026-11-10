@@ -18,7 +18,7 @@ Node* BST_System::InsertNode(Node *root, int data){
     return root;
 }
 
-Node* BST_System::DeleteNode(Node* root,int d, bool found) {
+Node* BST_System::DeleteNode(Node* root,int d, bool& found) {
     if (root == nullptr) return root;
 
     // If the data to be deleted is smaller than the root's data, then it lies in the left subtree
