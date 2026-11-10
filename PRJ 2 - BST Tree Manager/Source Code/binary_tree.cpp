@@ -18,17 +18,18 @@ Node* BST_System::InsertNode(Node *root, int data){
     return root;
 }
 
-Node* BST_System::DeleteNode(Node* root,int d) {
+Node* BST_System::DeleteNode(Node* root,int d, bool found) {
     if (root == nullptr) return root;
 
     // If the data to be deleted is smaller than the root's data, then it lies in the left subtree
-    if (d < root->data) root->L = DeleteNode(root->L, d);
+    if (d < root->data) root->L = DeleteNode(root->L, d, found);
 
     // If the data to be deleted is greater than the root's data, then it lies in the right subtree
-    else if (d > root->data) root->R = DeleteNode(root->R, d);
+    else if (d > root->data) root->R = DeleteNode(root->R, d, found);
 
     // if data is same as root's data, then this is the node to be deleted
     else {
+        found = true;
         // node with only one child or no child
         if (root->L == nullptr) {
             Node* temp = root->R;
@@ -48,7 +49,7 @@ Node* BST_System::DeleteNode(Node* root,int d) {
         root->data = temp->data;
 
         // Delete the inorder successor
-        root->R = DeleteNode(root->R, temp->data);
+        root->R = DeleteNode(root->R, temp->data, found);
     }
     return root;
 }

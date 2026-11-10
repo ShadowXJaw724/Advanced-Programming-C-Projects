@@ -1,0 +1,153 @@
+\doxysection{BST\+\_\+\+System Class Reference}
+\label{class_b_s_t___system}\index{BST\_System@{BST\_System}}
+
+
+{\ttfamily \+\#include $<$binary\+\_\+tree.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ BST\+\_\+\+System} (int o)
+\item 
+\textbf{ Node} $\ast$ \textbf{ Create\+Node} (int d) const
+\item 
+\textbf{ Node} $\ast$ \textbf{ Insert\+Node} (\textbf{ Node} $\ast$root, int d)
+\item 
+\textbf{ Node} $\ast$ \textbf{ Delete\+Node} (\textbf{ Node} $\ast$root, int d)
+\item 
+\textbf{ Node} $\ast$ \textbf{ Find\+Node} (\textbf{ Node} $\ast$root, int key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Node} $\ast$ \textbf{ min\+Value\+Node} (\textbf{ Node} $\ast$node)
+\item 
+static void \textbf{ Preorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
+\item 
+static void \textbf{ Inorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
+\item 
+static void \textbf{ Postorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
+\item 
+static void \textbf{ Erase\+Node} (\textbf{ Node} $\ast$root)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \textbf{ 24} of file \textbf{ binary\+\_\+tree.\+h}.
+
+
+
+\label{class_b_s_t___system_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{BST\_System@{BST\_System}!BST\_System@{BST\_System}}
+\index{BST\_System@{BST\_System}!BST\_System@{BST\_System}}
+\doxysubsubsection{BST\_System()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a7f7804ba6806d7bbaa554a9d7626ebac} 
+BST\+\_\+\+System::\+\+BST\+\_\+\+System (\begin{DoxyParamCaption}\item[{int}]{o}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \textbf{ 28} of file \textbf{ binary\+\_\+tree.\+h}.
+
+
+
+\label{class_b_s_t___system_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\index{BST\_System@{BST\_System}!CreateNode@{CreateNode}}
+\index{CreateNode@{CreateNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{CreateNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a0e040119ab974c368f11d4f3f6d59f57} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Create\+Node (\begin{DoxyParamCaption}\item[{int}]{d}{}\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \textbf{ 7} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!DeleteNode@{DeleteNode}}
+\index{DeleteNode@{DeleteNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{DeleteNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a21e037d8b8ec575b93a5672e34a6495c} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Delete\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \textbf{ 21} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!EraseNode@{EraseNode}}
+\index{EraseNode@{EraseNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{EraseNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_ad35b51cacded00273cbaead1c71e4300} 
+void BST\+\_\+\+System::\+\+Erase\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 115} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!FindNode@{FindNode}}
+\index{FindNode@{FindNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{FindNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a18f04592cfaa0cdfcd5aee54c33e7dee} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Find\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \textbf{ 94} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!InorderTraversalNode@{InorderTraversalNode}}
+\index{InorderTraversalNode@{InorderTraversalNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{InorderTraversalNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a96c0f2b1a7fbc7f53b3e59d82a7056e9} 
+void BST\+\_\+\+System::\+\+Inorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 65} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!InsertNode@{InsertNode}}
+\index{InsertNode@{InsertNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{InsertNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a580fd34534e9258fda0fd3b8bfac3932} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Insert\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \textbf{ 14} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!minValueNode@{minValueNode}}
+\index{minValueNode@{minValueNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{minValueNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a5071764634995ec6cd643a1c6deb14bd} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+min\+Value\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 109} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!PostorderTraversalNode@{PostorderTraversalNode}}
+\index{PostorderTraversalNode@{PostorderTraversalNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{PostorderTraversalNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_abcf055b93d86233eb0550ac26cbbfa67} 
+void BST\+\_\+\+System::\+\+Postorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 74} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+\index{BST\_System@{BST\_System}!PreorderTraversalNode@{PreorderTraversalNode}}
+\index{PreorderTraversalNode@{PreorderTraversalNode}!BST\_System@{BST\_System}}
+\doxysubsubsection{PreorderTraversalNode()}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a0b615749199f1dc5d2939980e4ddca9c} 
+void BST\+\_\+\+System::\+\+Preorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \textbf{ 56} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+ripja/\+\+Documents/\+[\+Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 2 -\/ BST Tree Manager/\+\+Source Code/\textbf{ binary\+\_\+tree.\+h}\item 
+C:\+/\+\+Users/\+ripja/\+\+Documents/\+[\+Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 2 -\/ BST Tree Manager/\+\+Source Code/\textbf{ binary\+\_\+tree.\+cpp}\end{DoxyCompactItemize}
