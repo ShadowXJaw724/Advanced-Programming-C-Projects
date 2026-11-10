@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_node.ht
 </div><!--header-->
 <div class="contents">
 
-<p>This is a class and struct to control and dictate how a Binary Search Tree would work.  
+<p>Struktura przechowująca pojedynczy węzeł drzewa.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>&gt;</code></p>
@@ -122,7 +122,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('struct_node.ht
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae29ae4bc42b5af7751d267a0da63e462" id="r_ae29ae4bc42b5af7751d267a0da63e462"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae29ae4bc42b5af7751d267a0da63e462">Node</a> (int o)</td></tr>
+<tr class="memdesc:ae29ae4bc42b5af7751d267a0da63e462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy pusty węzeł z podaną wartością.  <br /></td></tr>
 <tr class="memitem:ad7a34779cad45d997bfd6d3d8043c75f" id="r_ad7a34779cad45d997bfd6d3d8043c75f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad7a34779cad45d997bfd6d3d8043c75f">Node</a> ()</td></tr>
+<tr class="memdesc:ad7a34779cad45d997bfd6d3d8043c75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy węzeł z wartością początkową równą 0.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -131,9 +133,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab9c8367d011b4cd2925708eefb2393a5" id="r_ab9c8367d011b4cd2925708eefb2393a5"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab9c8367d011b4cd2925708eefb2393a5">R</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This firstly introduces the <a class="el" href="struct_node.html" title="This is a class and struct to control and dictate how a Binary Search Tree would work.">Node</a>, with data and then left and right as would the real binary tree. BTS is just a root with the left having smaller than and the right having bigger than numerals. We can </p>
+<div class="textblock"><p>Każdy węzeł przechowuje wartość oraz wskaźniki na lewe i prawe dziecko. </p>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00018">18</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00007">7</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae29ae4bc42b5af7751d267a0da63e462" name="ae29ae4bc42b5af7751d267a0da63e462"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae29ae4bc42b5af7751d267a0da63e462">&#9670;&#160;</a></span>Node() <span class="overload">[1/2]</span></h2>
@@ -157,8 +159,14 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Wartość przechowywana w węźle. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00020">20</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00016">16</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +210,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00019">19</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00008">8</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +226,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00019">19</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00009">9</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 
 </div>
 </div>
@@ -234,7 +242,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00019">19</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00010">10</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 
 </div>
 </div>

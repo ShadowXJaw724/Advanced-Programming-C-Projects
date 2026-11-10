@@ -114,27 +114,41 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_b_s_t___
 </div><!--header-->
 <div class="contents">
 
+<p>Klasa obsługująca operacje na drzewie wyszukiwania binarnego.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f7804ba6806d7bbaa554a9d7626ebac" id="r_a7f7804ba6806d7bbaa554a9d7626ebac"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7f7804ba6806d7bbaa554a9d7626ebac">BST_System</a> (int o)</td></tr>
+<tr class="memdesc:a7f7804ba6806d7bbaa554a9d7626ebac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_b_s_t___system.html" title="Klasa obsługująca operacje na drzewie wyszukiwania binarnego.">BST_System</a>.  <br /></td></tr>
 <tr class="memitem:a0e040119ab974c368f11d4f3f6d59f57" id="r_a0e040119ab974c368f11d4f3f6d59f57"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a0e040119ab974c368f11d4f3f6d59f57">CreateNode</a> (int d) const</td></tr>
+<tr class="memdesc:a0e040119ab974c368f11d4f3f6d59f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy węzeł drzewa.  <br /></td></tr>
 <tr class="memitem:a580fd34534e9258fda0fd3b8bfac3932" id="r_a580fd34534e9258fda0fd3b8bfac3932"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a580fd34534e9258fda0fd3b8bfac3932">InsertNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int d)</td></tr>
-<tr class="memitem:a21e037d8b8ec575b93a5672e34a6495c" id="r_a21e037d8b8ec575b93a5672e34a6495c"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a21e037d8b8ec575b93a5672e34a6495c">DeleteNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int d)</td></tr>
+<tr class="memdesc:a580fd34534e9258fda0fd3b8bfac3932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje nową wartość do drzewa.  <br /></td></tr>
+<tr class="memitem:a199c64a5c263d91343b159a0f0b26f3e" id="r_a199c64a5c263d91343b159a0f0b26f3e"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a199c64a5c263d91343b159a0f0b26f3e">DeleteNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int d, bool &amp;found)</td></tr>
+<tr class="memdesc:a199c64a5c263d91343b159a0f0b26f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa wybraną wartość z drzewa.  <br /></td></tr>
 <tr class="memitem:a18f04592cfaa0cdfcd5aee54c33e7dee" id="r_a18f04592cfaa0cdfcd5aee54c33e7dee"><td class="memItemLeft"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a18f04592cfaa0cdfcd5aee54c33e7dee">FindNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int key)</td></tr>
+<tr class="memdesc:a18f04592cfaa0cdfcd5aee54c33e7dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyszukuje wartość i wyświetla drogę do niej.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5071764634995ec6cd643a1c6deb14bd" id="r_a5071764634995ec6cd643a1c6deb14bd"><td class="memItemLeft">static <a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a5071764634995ec6cd643a1c6deb14bd">minValueNode</a> (<a class="el" href="struct_node.html">Node</a> *node)</td></tr>
+<tr class="memdesc:a5071764634995ec6cd643a1c6deb14bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Znajduje najmniejszą wartość w poddrzewie.  <br /></td></tr>
 <tr class="memitem:a0b615749199f1dc5d2939980e4ddca9c" id="r_a0b615749199f1dc5d2939980e4ddca9c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0b615749199f1dc5d2939980e4ddca9c">PreorderTraversalNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int depth)</td></tr>
+<tr class="memdesc:a0b615749199f1dc5d2939980e4ddca9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla drzewo w kolejności preorder.  <br /></td></tr>
 <tr class="memitem:a96c0f2b1a7fbc7f53b3e59d82a7056e9" id="r_a96c0f2b1a7fbc7f53b3e59d82a7056e9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a96c0f2b1a7fbc7f53b3e59d82a7056e9">InorderTraversalNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int depth)</td></tr>
+<tr class="memdesc:a96c0f2b1a7fbc7f53b3e59d82a7056e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla drzewo w odwróconej kolejności inorder.  <br /></td></tr>
 <tr class="memitem:abcf055b93d86233eb0550ac26cbbfa67" id="r_abcf055b93d86233eb0550ac26cbbfa67"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abcf055b93d86233eb0550ac26cbbfa67">PostorderTraversalNode</a> (<a class="el" href="struct_node.html">Node</a> *root, int depth)</td></tr>
+<tr class="memdesc:abcf055b93d86233eb0550ac26cbbfa67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla drzewo w kolejności postorder.  <br /></td></tr>
 <tr class="memitem:ad35b51cacded00273cbaead1c71e4300" id="r_ad35b51cacded00273cbaead1c71e4300"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad35b51cacded00273cbaead1c71e4300">EraseNode</a> (<a class="el" href="struct_node.html">Node</a> *root)</td></tr>
+<tr class="memdesc:ad35b51cacded00273cbaead1c71e4300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa rekurencyjnie wszystkie węzły drzewa.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00024">24</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<div class="textblock"><p>Umożliwia tworzenie, dodawanie, usuwanie i wyszukiwanie elementów drzewa oraz wyświetlanie jego zawartości. </p>
+
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00030">30</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f7804ba6806d7bbaa554a9d7626ebac" name="a7f7804ba6806d7bbaa554a9d7626ebac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f7804ba6806d7bbaa554a9d7626ebac">&#9670;&#160;</a></span>BST_System()</h2>
@@ -158,8 +172,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>Początkowa wartość klasy. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00028">28</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8h_source.html#l00050">50</a> of file <a class="el" href="binary__tree_8h_source.html">binary_tree.h</a>.</p>
 
 </div>
 </div>
@@ -178,13 +198,20 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td>Wartość nowego węzła. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaźnik na utworzony węzeł. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00007">7</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a21e037d8b8ec575b93a5672e34a6495c" name="a21e037d8b8ec575b93a5672e34a6495c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e037d8b8ec575b93a5672e34a6495c">&#9670;&#160;</a></span>DeleteNode()</h2>
+<a id="a199c64a5c263d91343b159a0f0b26f3e" name="a199c64a5c263d91343b159a0f0b26f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199c64a5c263d91343b159a0f0b26f3e">&#9670;&#160;</a></span>DeleteNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,10 +224,24 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>found</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">d</td><td>Wartość do usunięcia. </td></tr>
+    <tr><td class="paramname">found</td><td>Zmienna informująca o znalezieniu elementu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaźnik na korzeń drzewa po usunięciu. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00021">21</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
@@ -228,8 +269,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa do usunięcia. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00115">115</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00116">116</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,8 +298,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">key</td><td>Szukana wartość. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>W obecnej implementacji funkcja nie zwraca poprawnie wskaźnika. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00094">94</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00095">95</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,8 +337,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">depth</td><td>Aktualna głębokość węzła. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00065">65</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00066">66</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -305,6 +367,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">d</td><td>Wartość do dodania. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaźnik na korzeń drzewa po dodaniu elementu. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00014">14</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
@@ -332,8 +402,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Korzeń sprawdzanego poddrzewa. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Wskaźnik na węzeł z najmniejszą wartością. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00109">109</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00110">110</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,8 +440,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">depth</td><td>Aktualna głębokość węzła. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00074">74</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00075">75</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>
@@ -394,8 +478,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">depth</td><td>Aktualna głębokość węzła. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00056">56</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="binary__tree_8cpp_source.html#l00057">57</a> of file <a class="el" href="binary__tree_8cpp_source.html">binary_tree.cpp</a>.</p>
 
 </div>
 </div>

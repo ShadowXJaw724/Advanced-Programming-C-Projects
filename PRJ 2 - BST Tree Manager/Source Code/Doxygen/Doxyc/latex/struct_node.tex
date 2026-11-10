@@ -2,7 +2,7 @@
 \label{struct_node}\index{Node@{Node}}
 
 
-This is a class and struct to control and dictate how a Binary Search Tree would work.  
+Struktura przechowująca pojedynczy węzeł drzewa.  
 
 
 
@@ -13,9 +13,9 @@ This is a class and struct to control and dictate how a Binary Search Tree would
 \begin{DoxyCompactItemize}
 \item 
 \textbf{ Node} (int o)
-\item 
+\begin{DoxyCompactList}\small\item\em Tworzy pusty węzeł z podaną wartością. \end{DoxyCompactList}\item 
 \textbf{ Node} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tworzy węzeł z wartością początkową równą 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,9 +28,9 @@ int \textbf{ data}
 
 
 \doxysubsection{Detailed Description}
-This firstly introduces the \doxyref{Node}{p.}{struct_node}, with data and then left and right as would the real binary tree. BTS is just a root with the left having smaller than and the right having bigger than numerals. We can 
+Każdy węzeł przechowuje wartość oraz wskaźniki na lewe i prawe dziecko. 
 
-Definition at line \textbf{ 18} of file \textbf{ binary\+\_\+tree.\+h}.
+Definition at line \textbf{ 7} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 
@@ -43,8 +43,13 @@ Definition at line \textbf{ 18} of file \textbf{ binary\+\_\+tree.\+h}.
 Node::\+\+Node (\begin{DoxyParamCaption}\item[{int}]{o}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em o} & Wartość przechowywana w węźle. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 20} of file \textbf{ binary\+\_\+tree.\+h}.
+
+Definition at line \textbf{ 16} of file \textbf{ binary\+\_\+tree.\+h}.
 
 \index{Node@{Node}!Node@{Node}}
 \index{Node@{Node}!Node@{Node}}
@@ -68,7 +73,7 @@ int Node::\+data}
 
 
 
-Definition at line \textbf{ 19} of file \textbf{ binary\+\_\+tree.\+h}.
+Definition at line \textbf{ 8} of file \textbf{ binary\+\_\+tree.\+h}.
 
 \index{Node@{Node}!L@{L}}
 \index{L@{L}!Node@{Node}}
@@ -78,7 +83,7 @@ Definition at line \textbf{ 19} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 
-Definition at line \textbf{ 19} of file \textbf{ binary\+\_\+tree.\+h}.
+Definition at line \textbf{ 9} of file \textbf{ binary\+\_\+tree.\+h}.
 
 \index{Node@{Node}!R@{R}}
 \index{R@{R}!Node@{Node}}
@@ -88,7 +93,7 @@ Definition at line \textbf{ 19} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 
-Definition at line \textbf{ 19} of file \textbf{ binary\+\_\+tree.\+h}.
+Definition at line \textbf{ 10} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 

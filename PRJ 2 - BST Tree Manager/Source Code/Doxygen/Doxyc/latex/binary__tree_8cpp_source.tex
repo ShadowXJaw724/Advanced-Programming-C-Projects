@@ -21,106 +21,107 @@
 \DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{return}\ root;}
 \DoxyCodeLine{00019\ \}}
 \DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ Node*\ BST\_System::DeleteNode(Node*\ root,\textcolor{keywordtype}{int}\ d)\ \{}
+\DoxyCodeLine{00021\ Node*\ BST\_System::DeleteNode(Node*\ root,\textcolor{keywordtype}{int}\ d,\ \textcolor{keywordtype}{bool}\&\ found)\ \{}
 \DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ ==\ \textcolor{keyword}{nullptr})\ \textcolor{keywordflow}{return}\ root;}
 \DoxyCodeLine{00023\ }
 \DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ If\ the\ data\ to\ be\ deleted\ is\ smaller\ than\ the\ root's\ data,\ then\ it\ lies\ in\ the\ left\ subtree}}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{if}\ (d\ <\ root-\/>data)\ root-\/>L\ =\ DeleteNode(root-\/>L,\ d);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{if}\ (d\ <\ root-\/>data)\ root-\/>L\ =\ DeleteNode(root-\/>L,\ d,\ found);}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ If\ the\ data\ to\ be\ deleted\ is\ greater\ than\ the\ root's\ data,\ then\ it\ lies\ in\ the\ right\ subtree}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (d\ >\ root-\/>data)\ root-\/>R\ =\ DeleteNode(root-\/>R,\ d);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (d\ >\ root-\/>data)\ root-\/>R\ =\ DeleteNode(root-\/>R,\ d,\ found);}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ if\ data\ is\ same\ as\ root's\ data,\ then\ this\ is\ the\ node\ to\ be\ deleted}}
 \DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ node\ with\ only\ one\ child\ or\ no\ child}}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (root-\/>L\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ Node*\ temp\ =\ root-\/>R;}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ root;}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temp;}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (root-\/>R\ ==\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ Node*\ temp\ =\ root-\/>L;}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ root;}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temp;}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ node\ with\ two\ children\ :\ Get\ the\ inorder\ successor}}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ (smallest\ in\ the\ right\ subtree)}}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ Node*\ temp\ =\ minValueNode(root-\/>R);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Copy\ the\ inorder\ successor's\ content\ to\ this\ node}}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ root-\/>data\ =\ temp-\/>data;}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Delete\ the\ inorder\ successor}}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ root-\/>R\ =\ DeleteNode(root-\/>R,\ temp-\/>data);}
-\DoxyCodeLine{00052\ \ \ \ \ \}}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{return}\ root;}
-\DoxyCodeLine{00054\ \}}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ BST\_System::PreorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ (i\ ==\ depth\ -\/\ 1\ ?\ \textcolor{stringliteral}{"{}|-\/-\/\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ \ \ "{}});}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::cout\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ PreorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ PreorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
-\DoxyCodeLine{00062\ \ \ \ \ \}}
-\DoxyCodeLine{00063\ \}}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ BST\_System::InorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
-\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ InorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ "{}};}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ "{}}\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ InorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
-\DoxyCodeLine{00071\ \ \ \ \ \}}
-\DoxyCodeLine{00072\ \}}
-\DoxyCodeLine{00073\ }
-\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ BST\_System::PostorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ PostorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ PostorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ "{}};}
-\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/>\ "{}}\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00080\ \ \ \ \ \}}
-\DoxyCodeLine{00081\ \}}
-\DoxyCodeLine{00082\ }
-\DoxyCodeLine{00083\ \textcolor{keywordtype}{bool}\ BST\_System::FindPathRec(Node*\ node,\ \textcolor{keywordtype}{int}\ key,\ std::vector<int>\&\ path)\ \{}
-\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ ==\ \textcolor{keyword}{nullptr})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \ \ \ \ path.push\_back(node-\/>data);}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{if}\ (node-\/>data\ ==\ key)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{if}\ (key\ <\ node-\/>data)\ \textcolor{keywordflow}{return}\ FindPathRec(node-\/>L,\ key,\ path);}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{return}\ FindPathRec(node-\/>R,\ key,\ path);}
-\DoxyCodeLine{00092\ \}}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00094\ Node\ *BST\_System::FindNode(Node\ *root,\ \textcolor{keywordtype}{int}\ key)\ \{}
-\DoxyCodeLine{00095\ \ \ \ \ std::vector<int>\ path;}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{if}\ (FindPathRec(root,\ key,\ path))\ \{}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Droga\ do\ waluty\ "{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ path.size();\ i++)\ \{}
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ path[i];}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ path.size()\ -\/\ 1)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ -\/>\ "{}};}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00104\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Waluta\ "{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}\ nie\ byla\ znaleziona.\(\backslash\)n"{}};}
-\DoxyCodeLine{00106\ \ \ \ \ \}}
-\DoxyCodeLine{00107\ \}}
-\DoxyCodeLine{00108\ }
-\DoxyCodeLine{00109\ Node*\ BST\_System::minValueNode(Node*\ node)\{}
-\DoxyCodeLine{00110\ \ \ \ \ Node*\ current\ =\ node;}
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{while}\ (current\ \&\&\ current-\/>L\ !=\ \textcolor{keyword}{nullptr})\ current\ =\ current-\/>L;}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{return}\ current;}
-\DoxyCodeLine{00113\ \}}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ BST\_System::EraseNode(Node*\ node)\ \{}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ !=\ \textcolor{keyword}{nullptr})\ \{}
-\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ EraseNode(node-\/>L);}
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ EraseNode(node-\/>R);}
-\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ node;}
-\DoxyCodeLine{00120\ \ \ \ \ \}}
-\DoxyCodeLine{00121\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ found\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ node\ with\ only\ one\ child\ or\ no\ child}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (root-\/>L\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ Node*\ temp\ =\ root-\/>R;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ root;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temp;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (root-\/>R\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ Node*\ temp\ =\ root-\/>L;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ root;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ temp;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ node\ with\ two\ children\ :\ Get\ the\ inorder\ successor}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ (smallest\ in\ the\ right\ subtree)}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ Node*\ temp\ =\ minValueNode(root-\/>R);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Copy\ the\ inorder\ successor's\ content\ to\ this\ node}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ root-\/>data\ =\ temp-\/>data;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Delete\ the\ inorder\ successor}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ root-\/>R\ =\ DeleteNode(root-\/>R,\ temp-\/>data,\ found);}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{return}\ root;}
+\DoxyCodeLine{00055\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{void}\ BST\_System::PreorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ (i\ ==\ depth\ -\/\ 1\ ?\ \textcolor{stringliteral}{"{}|-\/-\/\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ \ \ "{}});}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::cout\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ PreorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ PreorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ BST\_System::InorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ InorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ "{}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ "{}}\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ InorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00073\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{void}\ BST\_System::PostorderTraversalNode(Node*\ root,\ \textcolor{keywordtype}{int}\ depth)\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{if}\ (root\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ PostorderTraversalNode(root-\/>L,\ depth\ +\ 1);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ PostorderTraversalNode(root-\/>R,\ depth\ +\ 1);}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ depth;\ i++)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ "{}};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/>\ "{}}\ <<\ root-\/>data\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{bool}\ BST\_System::FindPathRec(Node*\ node,\ \textcolor{keywordtype}{int}\ key,\ std::vector<int>\&\ path)\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ ==\ \textcolor{keyword}{nullptr})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ path.push\_back(node-\/>data);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{if}\ (node-\/>data\ ==\ key)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{if}\ (key\ <\ node-\/>data)\ \textcolor{keywordflow}{return}\ FindPathRec(node-\/>L,\ key,\ path);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ FindPathRec(node-\/>R,\ key,\ path);}
+\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ Node\ *BST\_System::FindNode(Node\ *root,\ \textcolor{keywordtype}{int}\ key)\ \{}
+\DoxyCodeLine{00096\ \ \ \ \ std::vector<int>\ path;}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{if}\ (FindPathRec(root,\ key,\ path))\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Droga\ do\ waluty\ "{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}:\ "{}};}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ path.size();\ i++)\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ path[i];}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ !=\ path.size()\ -\/\ 1)\ std::cout\ <<\ \textcolor{stringliteral}{"{}\ -\/>\ "{}};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00105\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Waluta\ "{}}\ <<\ key\ <<\ \textcolor{stringliteral}{"{}\ nie\ byla\ znaleziona.\(\backslash\)n"{}};}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ Node*\ BST\_System::minValueNode(Node*\ node)\{}
+\DoxyCodeLine{00111\ \ \ \ \ Node*\ current\ =\ node;}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{while}\ (current\ \&\&\ current-\/>L\ !=\ \textcolor{keyword}{nullptr})\ current\ =\ current-\/>L;}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{return}\ current;}
+\DoxyCodeLine{00114\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ BST\_System::EraseNode(Node*\ node)\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{if}\ (node\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ EraseNode(node-\/>L);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ EraseNode(node-\/>R);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ node;}
+\DoxyCodeLine{00121\ \ \ \ \ \}}
+\DoxyCodeLine{00122\ \}}
 
 \end{DoxyCode}
