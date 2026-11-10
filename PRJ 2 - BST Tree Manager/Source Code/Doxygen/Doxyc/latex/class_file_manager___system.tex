@@ -2,21 +2,26 @@
 \label{class_file_manager___system}\index{FileManager\_System@{FileManager\_System}}
 
 
+Klasa odpowiedzialna za zapis i odczyt danych z plików binarnych.  
+
+
+
+
 {\ttfamily \+\#include $<$file\+\_\+manager.\+h$>$}
 
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static void \textbf{ Save\+To\+Binary} (\textbf{ Node} $\ast$root, const std::\+string \&filename)
-\item 
+\begin{DoxyCompactList}\small\item\em Zapisuje zawartość drzewa do pliku binarnego. \end{DoxyCompactList}\item 
 static \textbf{ Node} $\ast$ \textbf{ Load\+From\+Binary} (\textbf{ Node} $\ast$root, const std::\+string \&filename, \textbf{ BST\+\_\+\+System} \&bst)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Wczytuje wartości z pliku binarnego do drzewa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Pozwala zapisać wartości z drzewa do pliku oraz odczytać je i ponownie dodać do drzewa. 
 
-
-Definition at line \textbf{ 8} of file \textbf{ file\+\_\+manager.\+h}.
+Definition at line \textbf{ 14} of file \textbf{ file\+\_\+manager.\+h}.
 
 
 
@@ -28,6 +33,18 @@ Definition at line \textbf{ 8} of file \textbf{ file\+\_\+manager.\+h}.
 {\footnotesize\ttfamily \label{class_file_manager___system_a16f8b3b99cd3a1f82d631d7ec34bf962} 
 \textbf{ Node} $\ast$ File\+Manager\+\_\+\+System::\+\+Load\+From\+Binary (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{const std::\+string \&}]{filename}{, }\item[{\textbf{ BST\+\_\+\+System} \&}]{bst}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Każda odczytana wartość jest dodawana do drzewa za pomocą funkcji Insert\+Node. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em filename} & Nazwa pliku do odczytu. \\
+\hline
+{\em bst} & Obiekt obsługujący operacje na drzewie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Korzeń drzewa po wczytaniu danych. 
+\end{DoxyReturn}
 
 
 Definition at line \textbf{ 22} of file \textbf{ file\+\_\+manager.\+cpp}.
@@ -38,6 +55,13 @@ Definition at line \textbf{ 22} of file \textbf{ file\+\_\+manager.\+cpp}.
 {\footnotesize\ttfamily \label{class_file_manager___system_a3fde3c15a1a98e6f108bd0fa81355e49} 
 void File\+Manager\+\_\+\+System::\+\+Save\+To\+Binary (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{const std::\+string \&}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em filename} & Nazwa pliku do zapisu. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \textbf{ 11} of file \textbf{ file\+\_\+manager.\+cpp}.

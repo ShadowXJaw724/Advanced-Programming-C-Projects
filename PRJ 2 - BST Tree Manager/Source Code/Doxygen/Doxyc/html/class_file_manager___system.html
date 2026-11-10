@@ -114,16 +114,22 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_file_man
 </div><!--header-->
 <div class="contents">
 
+<p>Klasa odpowiedzialna za zapis i odczyt danych z plików binarnych.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="file__manager_8h_source.html">file_manager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fde3c15a1a98e6f108bd0fa81355e49" id="r_a3fde3c15a1a98e6f108bd0fa81355e49"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3fde3c15a1a98e6f108bd0fa81355e49">SaveToBinary</a> (<a class="el" href="struct_node.html">Node</a> *root, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a3fde3c15a1a98e6f108bd0fa81355e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje zawartość drzewa do pliku binarnego.  <br /></td></tr>
 <tr class="memitem:a16f8b3b99cd3a1f82d631d7ec34bf962" id="r_a16f8b3b99cd3a1f82d631d7ec34bf962"><td class="memItemLeft">static <a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a16f8b3b99cd3a1f82d631d7ec34bf962">LoadFromBinary</a> (<a class="el" href="struct_node.html">Node</a> *root, const std::string &amp;filename, <a class="el" href="class_b_s_t___system.html">BST_System</a> &amp;bst)</td></tr>
+<tr class="memdesc:a16f8b3b99cd3a1f82d631d7ec34bf962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje wartości z pliku binarnego do drzewa.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="file__manager_8h_source.html#l00008">8</a> of file <a class="el" href="file__manager_8h_source.html">file_manager.h</a>.</p>
+<div class="textblock"><p>Pozwala zapisać wartości z drzewa do pliku oraz odczytać je i ponownie dodać do drzewa. </p>
+
+<p class="definition">Definition at line <a class="el" href="file__manager_8h_source.html#l00014">14</a> of file <a class="el" href="file__manager_8h_source.html">file_manager.h</a>.</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a16f8b3b99cd3a1f82d631d7ec34bf962" name="a16f8b3b99cd3a1f82d631d7ec34bf962"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16f8b3b99cd3a1f82d631d7ec34bf962">&#9670;&#160;</a></span>LoadFromBinary()</h2>
@@ -156,6 +162,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Każda odczytana wartość jest dodawana do drzewa za pomocą funkcji InsertNode. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">filename</td><td>Nazwa pliku do odczytu. </td></tr>
+    <tr><td class="paramname">bst</td><td>Obiekt obsługujący operacje na drzewie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Korzeń drzewa po wczytaniu danych. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="file__manager_8cpp_source.html#l00022">22</a> of file <a class="el" href="file__manager_8cpp_source.html">file_manager.cpp</a>.</p>
 
@@ -187,6 +202,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Korzeń drzewa. </td></tr>
+    <tr><td class="paramname">filename</td><td>Nazwa pliku do zapisu. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="file__manager_8cpp_source.html#l00011">11</a> of file <a class="el" href="file__manager_8cpp_source.html">file_manager.cpp</a>.</p>
 

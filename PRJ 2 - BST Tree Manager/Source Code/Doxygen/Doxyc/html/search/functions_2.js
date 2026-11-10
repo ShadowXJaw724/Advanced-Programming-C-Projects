@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deletenode_0',['DeleteNode',['../class_b_s_t___system.html#a21e037d8b8ec575b93a5672e34a6495c',1,'BST_System']]]
+  ['deletenode_0',['DeleteNode',['../class_b_s_t___system.html#a199c64a5c263d91343b159a0f0b26f3e',1,'BST_System']]]
 ];

@@ -2,40 +2,45 @@
 \label{class_b_s_t___system}\index{BST\_System@{BST\_System}}
 
 
+Klasa obsługująca operacje na drzewie wyszukiwania binarnego.  
+
+
+
+
 {\ttfamily \+\#include $<$binary\+\_\+tree.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \textbf{ BST\+\_\+\+System} (int o)
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \doxyref{BST\+\_\+\+System}{p.}{class_b_s_t___system}. \end{DoxyCompactList}\item 
 \textbf{ Node} $\ast$ \textbf{ Create\+Node} (int d) const
-\item 
+\begin{DoxyCompactList}\small\item\em Tworzy nowy węzeł drzewa. \end{DoxyCompactList}\item 
 \textbf{ Node} $\ast$ \textbf{ Insert\+Node} (\textbf{ Node} $\ast$root, int d)
-\item 
-\textbf{ Node} $\ast$ \textbf{ Delete\+Node} (\textbf{ Node} $\ast$root, int d)
-\item 
+\begin{DoxyCompactList}\small\item\em Dodaje nową wartość do drzewa. \end{DoxyCompactList}\item 
+\textbf{ Node} $\ast$ \textbf{ Delete\+Node} (\textbf{ Node} $\ast$root, int d, bool \&found)
+\begin{DoxyCompactList}\small\item\em Usuwa wybraną wartość z drzewa. \end{DoxyCompactList}\item 
 \textbf{ Node} $\ast$ \textbf{ Find\+Node} (\textbf{ Node} $\ast$root, int key)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Wyszukuje wartość i wyświetla drogę do niej. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \textbf{ Node} $\ast$ \textbf{ min\+Value\+Node} (\textbf{ Node} $\ast$node)
-\item 
+\begin{DoxyCompactList}\small\item\em Znajduje najmniejszą wartość w poddrzewie. \end{DoxyCompactList}\item 
 static void \textbf{ Preorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
-\item 
+\begin{DoxyCompactList}\small\item\em Wyświetla drzewo w kolejności preorder. \end{DoxyCompactList}\item 
 static void \textbf{ Inorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
-\item 
+\begin{DoxyCompactList}\small\item\em Wyświetla drzewo w odwróconej kolejności inorder. \end{DoxyCompactList}\item 
 static void \textbf{ Postorder\+Traversal\+Node} (\textbf{ Node} $\ast$root, int depth)
-\item 
+\begin{DoxyCompactList}\small\item\em Wyświetla drzewo w kolejności postorder. \end{DoxyCompactList}\item 
 static void \textbf{ Erase\+Node} (\textbf{ Node} $\ast$root)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Usuwa rekurencyjnie wszystkie węzły drzewa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Umożliwia tworzenie, dodawanie, usuwanie i wyszukiwanie elementów drzewa oraz wyświetlanie jego zawartości. 
 
-
-Definition at line \textbf{ 24} of file \textbf{ binary\+\_\+tree.\+h}.
+Definition at line \textbf{ 30} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 
@@ -48,8 +53,13 @@ Definition at line \textbf{ 24} of file \textbf{ binary\+\_\+tree.\+h}.
 BST\+\_\+\+System::\+\+BST\+\_\+\+System (\begin{DoxyParamCaption}\item[{int}]{o}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em o} & Początkowa wartość klasy. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 28} of file \textbf{ binary\+\_\+tree.\+h}.
+
+Definition at line \textbf{ 50} of file \textbf{ binary\+\_\+tree.\+h}.
 
 
 
@@ -62,15 +72,35 @@ Definition at line \textbf{ 28} of file \textbf{ binary\+\_\+tree.\+h}.
 \textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Create\+Node (\begin{DoxyParamCaption}\item[{int}]{d}{}\end{DoxyParamCaption}) const}
 
 
+\begin{DoxyParams}{Parameters}
+{\em d} & Wartość nowego węzła. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaźnik na utworzony węzeł. 
+\end{DoxyReturn}
+
 
 Definition at line \textbf{ 7} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!DeleteNode@{DeleteNode}}
 \index{DeleteNode@{DeleteNode}!BST\_System@{BST\_System}}
 \doxysubsubsection{DeleteNode()}
-{\footnotesize\ttfamily \label{class_b_s_t___system_a21e037d8b8ec575b93a5672e34a6495c} 
-\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Delete\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{class_b_s_t___system_a199c64a5c263d91343b159a0f0b26f3e} 
+\textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Delete\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{d}{, }\item[{bool \&}]{found}{}\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em d} & Wartość do usunięcia. \\
+\hline
+{\em found} & Zmienna informująca o znalezieniu elementu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaźnik na korzeń drzewa po usunięciu. 
+\end{DoxyReturn}
 
 
 Definition at line \textbf{ 21} of file \textbf{ binary\+\_\+tree.\+cpp}.
@@ -82,8 +112,13 @@ Definition at line \textbf{ 21} of file \textbf{ binary\+\_\+tree.\+cpp}.
 void BST\+\_\+\+System::\+\+Erase\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa do usunięcia. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 115} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 116} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!FindNode@{FindNode}}
 \index{FindNode@{FindNode}!BST\_System@{BST\_System}}
@@ -92,8 +127,18 @@ Definition at line \textbf{ 115} of file \textbf{ binary\+\_\+tree.\+cpp}.
 \textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Find\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
 
 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em key} & Szukana wartość. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+W obecnej implementacji funkcja nie zwraca poprawnie wskaźnika. 
+\end{DoxyReturn}
 
-Definition at line \textbf{ 94} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 95} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!InorderTraversalNode@{InorderTraversalNode}}
 \index{InorderTraversalNode@{InorderTraversalNode}!BST\_System@{BST\_System}}
@@ -102,8 +147,15 @@ Definition at line \textbf{ 94} of file \textbf{ binary\+\_\+tree.\+cpp}.
 void BST\+\_\+\+System::\+\+Inorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em depth} & Aktualna głębokość węzła. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 65} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 66} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!InsertNode@{InsertNode}}
 \index{InsertNode@{InsertNode}!BST\_System@{BST\_System}}
@@ -111,6 +163,16 @@ Definition at line \textbf{ 65} of file \textbf{ binary\+\_\+tree.\+cpp}.
 {\footnotesize\ttfamily \label{class_b_s_t___system_a580fd34534e9258fda0fd3b8bfac3932} 
 \textbf{ Node} $\ast$ BST\+\_\+\+System::\+\+Insert\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{d}{}\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em d} & Wartość do dodania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaźnik na korzeń drzewa po dodaniu elementu. 
+\end{DoxyReturn}
 
 
 Definition at line \textbf{ 14} of file \textbf{ binary\+\_\+tree.\+cpp}.
@@ -122,8 +184,16 @@ Definition at line \textbf{ 14} of file \textbf{ binary\+\_\+tree.\+cpp}.
 \textbf{ Node} $\ast$ BST\+\_\+\+System::\+min\+Value\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em node} & Korzeń sprawdzanego poddrzewa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wskaźnik na węzeł z najmniejszą wartością. 
+\end{DoxyReturn}
 
-Definition at line \textbf{ 109} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 110} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!PostorderTraversalNode@{PostorderTraversalNode}}
 \index{PostorderTraversalNode@{PostorderTraversalNode}!BST\_System@{BST\_System}}
@@ -132,8 +202,15 @@ Definition at line \textbf{ 109} of file \textbf{ binary\+\_\+tree.\+cpp}.
 void BST\+\_\+\+System::\+\+Postorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em depth} & Aktualna głębokość węzła. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 74} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 75} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 \index{BST\_System@{BST\_System}!PreorderTraversalNode@{PreorderTraversalNode}}
 \index{PreorderTraversalNode@{PreorderTraversalNode}!BST\_System@{BST\_System}}
@@ -142,8 +219,15 @@ Definition at line \textbf{ 74} of file \textbf{ binary\+\_\+tree.\+cpp}.
 void BST\+\_\+\+System::\+\+Preorder\+Traversal\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{root}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
+\begin{DoxyParams}{Parameters}
+{\em root} & Korzeń drzewa. \\
+\hline
+{\em depth} & Aktualna głębokość węzła. \\
+\hline
+\end{DoxyParams}
 
-Definition at line \textbf{ 56} of file \textbf{ binary\+\_\+tree.\+cpp}.
+
+Definition at line \textbf{ 57} of file \textbf{ binary\+\_\+tree.\+cpp}.
 
 
 

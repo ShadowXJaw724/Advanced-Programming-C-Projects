@@ -1,0 +1,145 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}DoubleLinkedList}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+
+  \indexspace
+
+  \item {begin}
+    \subitem {iterator\_system}, \hyperpage{9}
+
+  \indexspace
+
+  \item {createFromArray}
+    \subitem {factory\_system}, \hyperpage{8}
+  \item {createSampleList}
+    \subitem {factory\_system}, \hyperpage{8}
+
+  \indexspace
+
+  \item {data}
+    \subitem {SX}, \hyperpage{10}
+  \item {DLL\_BackwardDisplay}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_Clear}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_ForwardDisplay}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_GetEnd}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_GetIDX}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_InsertBack}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_InsertFront}
+    \subitem {DoubleLinkedList}, \hyperpage{6}
+  \item {DLL\_InsertIDX}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DLL\_Next}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DLL\_Prev}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DLL\_RemoveBack}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DLL\_RemoveFront}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DLL\_RemoveIDX}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+  \item {DoubleLinkedList}, \hyperpage{5}
+    \subitem {\texorpdfstring{$\sim$}{\string~}DoubleLinkedList}, 
+		\hyperpage{6}
+    \subitem {DLL\_BackwardDisplay}, \hyperpage{6}
+    \subitem {DLL\_Clear}, \hyperpage{6}
+    \subitem {DLL\_ForwardDisplay}, \hyperpage{6}
+    \subitem {DLL\_GetEnd}, \hyperpage{6}
+    \subitem {DLL\_GetIDX}, \hyperpage{6}
+    \subitem {DLL\_InsertBack}, \hyperpage{6}
+    \subitem {DLL\_InsertFront}, \hyperpage{6}
+    \subitem {DLL\_InsertIDX}, \hyperpage{7}
+    \subitem {DLL\_Next}, \hyperpage{7}
+    \subitem {DLL\_Prev}, \hyperpage{7}
+    \subitem {DLL\_RemoveBack}, \hyperpage{7}
+    \subitem {DLL\_RemoveFront}, \hyperpage{7}
+    \subitem {DLL\_RemoveIDX}, \hyperpage{7}
+    \subitem {DoubleLinkedList}, \hyperpage{5, 6}
+    \subitem {iterator\_system}, \hyperpage{8}
+    \subitem {operator=}, \hyperpage{7}
+
+  \indexspace
+
+  \item {factory\_system}, \hyperpage{8}
+    \subitem {createFromArray}, \hyperpage{8}
+    \subitem {createSampleList}, \hyperpage{8}
+  \item {factory\_system.cpp}, \hyperpage{11}
+  \item {factory\_system.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {hasNext}
+    \subitem {iterator\_system}, \hyperpage{9}
+  \item {hasPrev}
+    \subitem {iterator\_system}, \hyperpage{9}
+
+  \indexspace
+
+  \item {iteratebackward}
+    \subitem {iterator\_system}, \hyperpage{9}
+  \item {iterateforward}
+    \subitem {iterator\_system}, \hyperpage{9}
+  \item {iterator\_system}, \hyperpage{8}
+    \subitem {begin}, \hyperpage{9}
+    \subitem {DoubleLinkedList}, \hyperpage{8}
+    \subitem {hasNext}, \hyperpage{9}
+    \subitem {hasPrev}, \hyperpage{9}
+    \subitem {iteratebackward}, \hyperpage{9}
+    \subitem {iterateforward}, \hyperpage{9}
+    \subitem {next}, \hyperpage{9}
+    \subitem {prev}, \hyperpage{9}
+    \subitem {rbegin}, \hyperpage{10}
+  \item {iterator\_system.cpp}, \hyperpage{11}
+  \item {iterator\_system.h}, \hyperpage{12}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{12}
+  \item {main.cpp}, \hyperpage{12}
+    \subitem {main}, \hyperpage{12}
+  \item {main.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {next}
+    \subitem {iterator\_system}, \hyperpage{9}
+    \subitem {SX}, \hyperpage{10}
+
+  \indexspace
+
+  \item {operator=}
+    \subitem {DoubleLinkedList}, \hyperpage{7}
+
+  \indexspace
+
+  \item {prev}
+    \subitem {iterator\_system}, \hyperpage{9}
+    \subitem {SX}, \hyperpage{10}
+
+  \indexspace
+
+  \item {rbegin}
+    \subitem {iterator\_system}, \hyperpage{10}
+
+  \indexspace
+
+  \item {SX}, \hyperpage{10}
+    \subitem {data}, \hyperpage{10}
+    \subitem {next}, \hyperpage{10}
+    \subitem {prev}, \hyperpage{10}
+    \subitem {SX}, \hyperpage{10}
+
+  \indexspace
+
+  \item {twosidelist.cpp}, \hyperpage{13}
+  \item {twosidelist.h}, \hyperpage{13}
+
+\end{theindex}
