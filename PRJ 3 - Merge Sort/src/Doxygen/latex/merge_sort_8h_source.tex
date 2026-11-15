@@ -1,0 +1,75 @@
+\doxysection{C:/\+\+Users/\+ripja/\+\+Documents/[Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 3 -\/ Merge Sort/\+src/\+merge\+Sort.h}
+\label{merge_sort_8h_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ SJX>}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }MergeSortAlg\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ MergeSorts(std::vector<SJX>\&\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ right)\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n1\ =\ mid\ -\/\ left\ +\ 1;}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ n2\ =\ right\ -\/\ mid;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Create\ temp\ vectors}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ std::vector<SJX>\ L(n1),\ R(n2);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Copy\ data\ to\ temp\ vectors\ L[]\ and\ R[]}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n1;\ i++)}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ L[i]\ =\ arr[left\ +\ i];}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ n2;\ j++)}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ R[j]\ =\ arr[mid\ +\ 1\ +\ j];}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0,\ j\ =\ 0;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ k\ =\ left;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Merge\ the\ temp\ vectors\ back}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ into\ arr[left..right]}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ n1\ \&\&\ j\ <\ n2)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (L[i]\ <=\ R[j])\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ L[i];}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ R[j];}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j++;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Copy\ the\ remaining\ elements\ of\ L[],}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ there\ are\ any}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ n1)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ L[i];}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Copy\ the\ remaining\ elements\ of\ R[],}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ if\ there\ are\ any}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (j\ <\ n2)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ R[j];}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ j++;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ begin\ is\ for\ left\ index\ and\ end\ is\ right\ index\ of\ the\ sub-\/array\ of\ arr\ to\ be\ sorted}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ MergeSort(std::vector<SJX>\&\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ right)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (left\ >=\ right)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mid\ =\ left\ +\ (right\ -\/\ left)\ /\ 2;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ MergeSortAlg<SJX>::MergeSort(arr,\ left,\ mid);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ MergeSortAlg<SJX>::MergeSort(arr,\ mid\ +\ 1,\ right);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ MergeSortAlg<SJX>::MergeSorts(arr,\ left,\ mid,\ right);}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ PrintVector(\textcolor{keyword}{const}\ std::vector<SJX>\&\ arr)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ arr.size()\ -\/\ 1;\ i++)\ std::cout\ <<\ arr[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+
+\end{DoxyCode}

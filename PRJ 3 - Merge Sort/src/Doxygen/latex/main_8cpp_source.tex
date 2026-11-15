@@ -1,0 +1,25 @@
+\doxysection{C:/\+\+Users/\+ripja/\+\+Documents/[Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 3 -\/ Merge Sort/\+src/\+main.cpp}
+\label{main_8cpp_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}mergeSort.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keywordtype}{int}\ main()\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ vector<int>\ IntTest\ =\ \{2,\ 4,\ 6,\ 9,\ 11,\ 3,\ 1,\ 44,\ 129,\ 8\};}
+\DoxyCodeLine{00008\ \ \ \ \ vector<double>\ DoubleTest\ =\ \{2.23,\ 4.22,\ 6.33,\ 9.44,\ 11.23,\ 3.91,\ 1.123,\ 44.129,\ 129.98765,\ 8.532\};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Before:\ "{}};\ MergeSortAlg<int>::PrintVector(IntTest);\ cout\ <<\ endl;}
+\DoxyCodeLine{00011\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}Before:\ "{}};\ MergeSortAlg<double>::PrintVector(DoubleTest);\ cout\ <<\ endl;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ MergeSortAlg<int>::MergeSort(IntTest,\ 0,\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(IntTest.size())\ -\/\ 1);}
+\DoxyCodeLine{00014\ \ \ \ \ MergeSortAlg<double>::MergeSort(DoubleTest,\ 0,\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(DoubleTest.size())\ -\/\ 1);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}After:\ "{}};\ MergeSortAlg<int>::PrintVector(IntTest);\ cout\ <<\ endl;}
+\DoxyCodeLine{00017\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}After:\ "{}};\ MergeSortAlg<double>::PrintVector(DoubleTest);\ cout\ <<\ endl;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
