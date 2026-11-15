@@ -1,0 +1,30 @@
+\begin{theindex}
+
+  \item {C:/Users/ripja/Documents/[Resources] GitHub Stuff/Advanced Programming C Projects/PRJ 3 -\/ Merge Sort/src/main.cpp}, 
+		7
+  \item {C:/Users/ripja/Documents/[Resources] GitHub Stuff/Advanced Programming C Projects/PRJ 3 -\/ Merge Sort/src/mergeSort.cpp}, 
+		8
+  \item {C:/Users/ripja/Documents/[Resources] GitHub Stuff/Advanced Programming C Projects/PRJ 3 -\/ Merge Sort/src/mergeSort.h}, 
+		8
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, 7
+  \item {main.cpp}
+    \subitem {main}, 7
+  \item {MergeSort}
+    \subitem {MergeSortAlg$<$ SJX $>$}, 5
+  \item {MergeSortAlg$<$ SJX $>$}, 5
+    \subitem {MergeSort}, 5
+    \subitem {MergeSorts}, 5
+    \subitem {PrintVector}, 6
+  \item {MergeSorts}
+    \subitem {MergeSortAlg$<$ SJX $>$}, 5
+
+  \indexspace
+
+  \item {PrintVector}
+    \subitem {MergeSortAlg$<$ SJX $>$}, 6
+
+\end{theindex}
