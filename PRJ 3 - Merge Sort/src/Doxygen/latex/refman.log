@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.8)  15 NOV 2026 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.8)  24 NOV 2026 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,12 +855,18 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 195.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 195.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 19
+5.
+
+(C:\Users\ripja\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 195.
 
-[1] [2
-
-]
+[1] [2]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 18.66588pt on input line 198.
@@ -873,6 +879,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
 
+
 ] [2
 
 ]
@@ -882,12 +889,6 @@ Chapter 2.
 ]
 Chapter 3.
 (class_merge_sort_alg.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 5.
-
-
-(C:\Users\ripja\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
 0.
 
@@ -898,8 +899,6 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 10.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 18.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 32.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 34.
 
@@ -910,14 +909,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-) (main_8cpp_source.tex) (merge_sort_8cpp.tex [7
+) (main_8cpp_source.tex) (merge_sort_8h.tex [7
 
-]) (merge_sort_8cpp_source.tex) (merge_sort_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-) (merge_sort_8h_source.tex [8])
+) (merge_sort_8h_source.tex [8]) (merge_sort_testing_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 10.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 10.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.16548pt, for example:
@@ -925,9 +934,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
 
-[9] [10
+[9]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 45.
+ [10]
 
-] (refman.ind
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[11]) (merge_sort_testing_8cpp_source.tex [12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[13]) [14] (refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
 
@@ -960,7 +986,8 @@ Underfull \hbox (badness 3428) in paragraph at lines 7--9
 \T1/phv/m/n/10 Pro-gram-ming C Projects/PRJ 3 - Merge
  []
 
-[11
+[15
+
 
 
 
@@ -971,13 +998,13 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13844 strings out of 467871
- 255997 string characters out of 5418376
- 691380 words of memory out of 5000000
- 42441 multiletter control sequences out of 15000+600000
- 672099 words of font info for 108 fonts, out of 8000000 for 9000
+ 13866 strings out of 467871
+ 257132 string characters out of 5418376
+ 698471 words of memory out of 5000000
+ 42461 multiletter control sequences out of 15000+600000
+ 678484 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,15n,117p,1505b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,16n,117p,1505b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ripja/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi10.pfb><C:/Users/ripja/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi12.pfb><C:/Users/ripja/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -987,10 +1014,11 @@ eX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/ripja/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/ripja/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><C:/Users/ripja/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/ripja/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (15 pages, 108456 bytes).
+grams/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/ripja/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (19 pages, 129496 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

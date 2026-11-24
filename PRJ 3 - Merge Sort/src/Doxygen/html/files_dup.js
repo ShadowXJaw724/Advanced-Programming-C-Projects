@@ -1,5 +1,6 @@
 var files_dup =
 [
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
-    [ "mergeSort.h", "merge_sort_8h.html", "merge_sort_8h" ]
+    [ "mergeSort.h", "merge_sort_8h.html", "merge_sort_8h" ],
+    [ "mergeSortTesting.cpp", "merge_sort_testing_8cpp.html", "merge_sort_testing_8cpp" ]
 ];
