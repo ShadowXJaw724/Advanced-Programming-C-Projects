@@ -1,0 +1,123 @@
+\doxysection{C:/\+\+Users/\+ripja/\+\+Documents/[Resources] Git\+Hub Stuff/\+\+Advanced Programming C Projects/\+\+PRJ 3 -\/ Merge Sort/\+src/\+merge\+Sort\+Testing.cpp}
+\label{merge_sort_testing_8cpp_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}mergeSort.h"{}}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <gtest/gtest.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ TEST(MergeSortTest,\ PreservesSortedVector)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ std::vector<int>\ values\ =\ \{1,\ 2,\ 3,\ 4,\ 5\};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{1,\ 2,\ 3,\ 4,\ 5\};}
+\DoxyCodeLine{00012\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00013\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ TEST(MergeSortTest,\ SortsReverseOrderedVector)\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ std::vector<int>\ values\ =\ \{5,\ 4,\ 3,\ 2,\ 1\};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{1,\ 2,\ 3,\ 4,\ 5\};}
+\DoxyCodeLine{00022\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00023\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00024\ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ TEST(MergeSortTest,\ SortsRandomVector)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<int>\ values\ =\ \{8,\ 3,\ 12,\ 1,\ 9,\ 4,\ 6\};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{1,\ 3,\ 4,\ 6,\ 8,\ 9,\ 12\};}
+\DoxyCodeLine{00032\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00033\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00034\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ TEST(MergeSortTest,\ SortsOnlyNegativeNumbers)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ std::vector<int>\ values\ =\ \{-\/3,\ -\/8,\ -\/1,\ -\/12,\ -\/5\};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{-\/12,\ -\/8,\ -\/5,\ -\/3,\ -\/1\};}
+\DoxyCodeLine{00042\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00043\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00044\ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ TEST(MergeSortTest,\ SortsPositiveAndNegativeNumbers)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ std::vector<int>\ values\ =\ \{4,\ -\/2,\ 7,\ -\/8,\ 0,\ 3\};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{-\/8,\ -\/2,\ 0,\ 3,\ 4,\ 7\};}
+\DoxyCodeLine{00052\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00053\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00054\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ TEST(MergeSortTest,\ HandlesEmptyVector)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<int>\ values;}
+\DoxyCodeLine{00061\ \ \ \ \ EXPECT\_NO\_THROW(MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1));}
+\DoxyCodeLine{00062\ \ \ \ \ EXPECT\_TRUE(values.empty());}
+\DoxyCodeLine{00063\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ TEST(MergeSortTest,\ HandlesSingleElement)\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ std::vector<int>\ values\ =\ \{42\};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{42\};}
+\DoxyCodeLine{00071\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,0);}
+\DoxyCodeLine{00072\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00073\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ TEST(MergeSortTest,\ SortsDuplicates)\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ std::vector<int>\ values\ =\ \{4,\ 2,\ 4,\ 1,\ 2,\ 4\};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{1,\ 2,\ 2,\ 4,\ 4,\ 4\};}
+\DoxyCodeLine{00081\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00082\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00083\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ TEST(MergeSortTest,\ SortsNegativeDuplicates)\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ std::vector<int>\ values\ =\ \{-\/4,\ -\/2,\ -\/4,\ -\/1,\ -\/2,\ -\/4\};}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{-\/4,\ -\/4,\ -\/4,\ -\/2,\ -\/2,\ -\/1\};}
+\DoxyCodeLine{00091\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00092\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ TEST(MergeSortTest,\ SortsIntegersWithNegativesAndDuplicates)\ \{}
+\DoxyCodeLine{00099\ \ \ \ \ std::vector<int>\ values\ =\ \{4,\ -\/2,\ 7,\ 4,\ 0,\ -\/5\};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{-\/5,\ -\/2,\ 0,\ 4,\ 4,\ 7\};}
+\DoxyCodeLine{00101\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00102\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00103\ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ TEST(MergeSortTest,\ PreservesTwoSortedElements)\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ std::vector<int>\ values\ =\ \{1,\ 2\};}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{1,\ 2\};}
+\DoxyCodeLine{00111\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00112\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00113\ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00118\ TEST(MergeSortTest,\ SortsLargeVector)\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ std::vector<int>\ values;}
+\DoxyCodeLine{00120\ \ \ \ \ std::vector<int>\ expected;}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 150;\ i\ >=\ 0;\ i-\/-\/)\ values.push\_back(i);}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ 150;\ i++)\ expected.push\_back(i);}
+\DoxyCodeLine{00123\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00124\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00125\ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00130\ TEST(MergeSortTest,\ SortsLargeVectorWithNegativesPositivesAndDuplicates)\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ std::vector<int>\ values;}
+\DoxyCodeLine{00132\ \ \ \ \ std::vector<int>\ expected;}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 50;\ i++)\ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ values.push\_back(5);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ values.push\_back(-\/3);}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ values.push\_back(10);}
+\DoxyCodeLine{00137\ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 50;\ i++)\ expected.push\_back(-\/3);}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 50;\ i++)\ expected.push\_back(5);}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 50;\ i++)\ expected.push\_back(10);}
+\DoxyCodeLine{00141\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00142\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00143\ \}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00148\ TEST(MergeSortTest,\ SortsDoubles)\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ std::vector<double>\ values\ =\ \{2.23,\ -\/1.5,\ 0.0,\ 1.123,\ 2.23\};}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<double>\ expected\ =\ \{-\/1.5,\ 0.0,\ 1.123,\ 2.23,\ 2.23\};}
+\DoxyCodeLine{00151\ \ \ \ \ MergeSortAlg<double>::MergeSort(values,0,\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(values.size())\ -\/\ 1);}
+\DoxyCodeLine{00152\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00153\ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ TEST(MergeSortTest,\ SortsOnlyRequestedRange)\ \{}
+\DoxyCodeLine{00159\ \ \ \ \ std::vector<int>\ values\ =\ \{99,\ 4,\ 1,\ 3,\ 2,\ -\/99\};}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<int>\ expected\ =\ \{99,\ 1,\ 2,\ 3,\ 4,\ -\/99\};}
+\DoxyCodeLine{00161\ \ \ \ \ MergeSortAlg<int>::MergeSort(values,1,4);}
+\DoxyCodeLine{00162\ \ \ \ \ EXPECT\_EQ(values,\ expected);}
+\DoxyCodeLine{00163\ \}}
+
+\end{DoxyCode}
